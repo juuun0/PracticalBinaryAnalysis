@@ -1,0 +1,9 @@
+#!/bin/bash
+
+if [ $1 == "on" ]
+then
+docker restart bfdMachine
+docker exec -it bfdMachine /bin/bash
+else
+    echo "Unexpected error"
+fi
